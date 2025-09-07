@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, #6EE7B7, #3B82F6);
+        }
+        /* Estilos para el mensaje de confirmación */
+        .confirmation-message {
+            display: none;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            background-color: #d1fae5;
+            color: #065f46;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Encabezado (Header) -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Dan Digital WEB</a>
+            <div class="space-x-4">
+                <a href="#inicio" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Servicios</a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Precios </a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Proyectos hechos</a>
+                <a href="#contacto" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">Contacto</a>
+              
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección principal (Hero Section) -->
+    <section id="inicio" class="hero text-white py-20 md:py-32 flex flex-col items-center justify-center text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Crea tu propio sitio web perzonalizado</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Diseño profesional, adaptable y fácil de usar para cualquier proyecto o negocio.
+            </p>
+            <a href="#servicios" class="bg-white text-blue-500 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-200 transition-transform transform hover:scale-105">
+                Explorar Servicios
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="container mx-auto px-4 py-16 md:py-24">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Tarjeta de Servicio 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="bg-blue-200 text-blue-800 rounded-full p-3 inline-block mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L10 14h4l.25 3m-3.5 0h-.5m4.25-3l-2-2m-2-2l-2 2m4 2l2-2m-2 2h-.5"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Diseño Web</h3>
+                <p class="text-gray-600">
+                    Diseños modernos , facil de usar y visualmente atractivos para captar la atención de tus visitantes
+                </p>
+            </div>
+            <!-- Tarjeta de Servicio 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="bg-green-200 text-green-800 rounded-full p-3 inline-block mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h4m0 0a2 2 0 100-4h-4a2 2 0 100 4m0 0L7 3h10L14 21"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Desarrollo Web</h3>
+                <p class="text-gray-600">
+                    Soluciones robustas y funcionales, desde sitios sencillos ¡hasta aplicaciones complejas!.
+                </p>
+            </div>
+            <!-- Tarjeta de Servicio 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="bg-purple-200 text-purple-800 rounded-full p-3 inline-block mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.5a.5.5 0 100-1 12 12 0 010-24 12 12 0 0112 12m-6 0a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Consultoría</h3>
+                <p class="text-gray-600">
+                    Te guiamos en cada paso para que tu visión se convierta en una página web profesional y única para tus visitantes
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="bg-gray-200 py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¡Contáctanos y empezemos a planear tu sitio web!</h2>
+            <p class="text-gray-600 mb-8">
+                Estamos listos para ayudarte a llevar tu idea al siguiente nivel
+            </p>
+            <form id="contact-form" class="bg-white p-8 rounded-xl shadow-lg">
+                <div class="mb-4">
+                    <input type="text" id="name" placeholder="Nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" placeholder="Correo Electrónico" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+                </div>
+                <div class="mb-6">
+                    <textarea id="message" placeholder="Tu mensaje" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                    Enviar Mensaje
+                </button>
+                <!-- Mensaje de confirmación -->
+                <div id="confirmation-message" class="confirmation-message">
+                    ¡Gracias por tu mensaje! Nos pondremos en contacto contigo lo mas pronto posible
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Dan Digital WEB. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Código JavaScript para la interactividad del formulario -->
+    <script>
+        // Obtenemos los elementos del DOM que necesitamos
+        const form = document.getElementById('contact-form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+        
+        // Agregamos un "listener" para el evento de envío del formulario
+        form.addEventListener('submit', function(event) {
+            // Evitamos que el formulario se envíe de la manera tradicional
+            // que recargaría la página
+            event.preventDefault(); 
+            
+            // Aquí podrías agregar código para enviar los datos a un servidor
+            // Por ahora, solo mostraremos el mensaje de confirmación
+            
+            // Ocultamos el formulario y mostramos el mensaje de confirmación
+            form.style.display = 'none';
+            confirmationMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
