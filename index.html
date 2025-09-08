@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,10 +34,9 @@
             <div class="space-x-4">
                 <a href="#inicio" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Inicio</a>
                 <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Servicios</a>
-                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Precios </a>
-                <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Proyectos hechos</a>
+                <a href="#proyectos" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Proyectos hechos</a>
+                <a href="#precios" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Precios</a>
                 <a href="#contacto" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">Contacto</a>
-              
 
             </div>
         </nav>
@@ -68,7 +66,7 @@
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Diseño Web</h3>
                 <p class="text-gray-600">
-                    Diseños modernos , facil de usar y visualmente atractivos para captar la atención de tus visitantes
+                    Diseños modernos, fáciles de usar y visualmente atractivos para captar la atención de tus visitantes.
                 </p>
             </div>
             <!-- Tarjeta de Servicio 2 -->
@@ -88,16 +86,78 @@
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Consultoría</h3>
                 <p class="text-gray-600">
-                    Te guiamos en cada paso para que tu visión se convierta en una página web profesional y única para tus visitantes
+                    Te guiamos en cada paso para que tu visión se convierta en una página web profesional y única para tus visitantes.
                 </p>
             </div>
         </div>
     </section>
+    
+    <!-- Sección de Proyectos - ¡Ahora con un Carrusel Horizontal! -->
+    <section id="proyectos" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Proyectos hechos por nosotros</h2> 
+          <p>Dale clic e inspírate!</p>
+          <p>Así de cool puede quedar tu página</p>
+        </div>
+        <!-- Contenedor del Carrusel -->
+        <div class="relative mt-8">
+            <!-- Contenedor de las tarjetas de proyectos con scroll horizontal -->
+            <div id="projects-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth p-4 space-x-8">
+                <!-- Tarjeta de Proyecto 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 snap-center min-w-[80%] md:min-w-[45%] lg:min-w-[30%]">
+                    <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Tu+Proyecto" alt="Un proyecto de restaurante" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Restaurant IONITE</h3>
+                        <p class="text-gray-600">
+                            Incluye menú, fondos, imágenes interactivas al pasar el mouse, etc...
+                        </p>    
+                        <a href="#" class="inline-block mt-4 text-blue-500 hover:text-blue-700 font-semibold">
+                            Ver proyecto &rarr;
+                        </a>
+                    </div> 
+                </div>
+                <!-- Tarjeta de Proyecto 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 snap-center min-w-[80%] md:min-w-[45%] lg:min-w-[30%]">
+                    <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Tu+Proyecto" alt="Un proyecto de una ferretería" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ferre Fer</h3>
+                        <p class="text-gray-600">
+                            Incluye herramientas que se venden, precios, imágenes interactivas de los productos al pasar el mouse.
+                        </p>    
+                        <a href="#" class="inline-block mt-4 text-blue-500 hover:text-blue-700 font-semibold">
+                            Ver proyecto &rarr;
+                        </a>
+                    </div> 
+                </div>
+                <!-- Tarjeta de Proyecto 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 snap-center min-w-[80%] md:min-w-[45%] lg:min-w-[30%]">
+                    <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Tu+Proyecto" alt="Un proyecto de una pastelería" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Pastelería Carlitos</h3>
+                        <p class="text-gray-600">
+                            Incluye pasteles que se venden, precios, imágenes interactivas de los productos al pasar el mouse.
+                        </p>    
+                        <a href="#" class="inline-block mt-4 text-blue-500 hover:text-blue-700 font-semibold">
+                            Ver proyecto &rarr;
+                        </a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Botones de Navegación -->
+            <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition-colors focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-200 transition-colors focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </section>
+
 
     <!-- Sección de Contacto -->
     <section id="contacto" class="bg-gray-200 py-16 md:py-24">
         <div class="container mx-auto px-4 text-center max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">¡Contáctanos y empezemos a planear tu sitio web!</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¡Contáctanos y empecemos a planear tu sitio web!</h2>
             <p class="text-gray-600 mb-8">
                 Estamos listos para ayudarte a llevar tu idea al siguiente nivel
             </p>
@@ -114,7 +174,7 @@
                 <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
                     Enviar Mensaje
                 </button>
-                <!-- Mensaje de confirmación -->
+                    <!-- Mensaje de confirmación -->
                 <div id="confirmation-message" class="confirmation-message">
                     ¡Gracias por tu mensaje! Nos pondremos en contacto contigo lo mas pronto posible
                 </div>
@@ -129,25 +189,51 @@
         </div>
     </footer>
 
-    <!-- Código JavaScript para la interactividad del formulario -->
+    <!-- Código JavaScript para la interactividad del formulario y el carrusel -->
     <script>
-        // Obtenemos los elementos del DOM que necesitamos
+        // JavaScript para el formulario de contacto
         const form = document.getElementById('contact-form');
         const confirmationMessage = document.getElementById('confirmation-message');
         
-        // Agregamos un "listener" para el evento de envío del formulario
         form.addEventListener('submit', function(event) {
-            // Evitamos que el formulario se envíe de la manera tradicional
-            // que recargaría la página
             event.preventDefault(); 
-            
-            // Aquí podrías agregar código para enviar los datos a un servidor
-            // Por ahora, solo mostraremos el mensaje de confirmación
-            
-            // Ocultamos el formulario y mostramos el mensaje de confirmación
             form.style.display = 'none';
             confirmationMessage.style.display = 'block';
         });
+
+        // JavaScript para el carrusel de proyectos
+        const carousel = document.getElementById('projects-carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        const cardWidth = carousel.firstElementChild.offsetWidth + 32; 
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: cardWidth,
+                behavior: 'smooth'
+            });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -cardWidth,
+                behavior: 'smooth'
+            });
+        });
+        
+        const updateButtonVisibility = () => {
+          const scrollLeft = carousel.scrollLeft;
+          const scrollWidth = carousel.scrollWidth;
+          const clientWidth = carousel.clientWidth;
+
+          prevBtn.style.display = scrollLeft > 0 ? 'block' : 'none';
+          nextBtn.style.display = scrollLeft + clientWidth < scrollWidth ? 'block' : 'none';
+        };
+        
+        carousel.addEventListener('scroll', updateButtonVisibility);
+        window.addEventListener('resize', updateButtonVisibility);
+        updateButtonVisibility();
     </script>
 </body>
 </html>
